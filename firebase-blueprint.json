@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profile and synchronization settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "lastActiveAt": { "type": "string" }
+      },
+      "required": ["uid"]
+    },
+    "users/painRecords": {
+      "title": "Pain Record",
+      "description": "Logged pain records for multi-device sync",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "timeOfDay": { "type": "string" },
+        "customTime": { "type": "string" },
+        "painLevel": { "type": "number" },
+        "location": { "type": "string" },
+        "notes": { "type": "string" },
+        "medications": { "type": "string" },
+        "triggers": { "type": "string" },
+        "activityLevel": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "date", "painLevel", "location"]
+    },
+    "users/patternReports": {
+      "title": "Pattern Report",
+      "description": "Saved clinical intelligence reports",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "summary": { "type": "string" },
+        "timeOfDayPatterns": { "type": "string" },
+        "medicationEffectiveness": { "type": "string" }
+      },
+      "required": ["id", "createdAt", "summary"]
+    }
+  }
+}

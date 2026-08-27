@@ -1,0 +1,6 @@
+{
+  "name": "Pain Level Tracking",
+  "description": "A comprehensive tracking application to log pain levels in the morning, afternoon, and evening, identify patterns, and publish analytical reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
